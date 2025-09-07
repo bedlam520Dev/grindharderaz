@@ -1,0 +1,1002 @@
+.termsHeadings {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Sedgwick Ave Display';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  color: var(--bs-orange);
+}
+
+.termsParagraphs {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+}
+
+.privacyHeadings {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Sedgwick Ave Display';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  color: var(--bs-orange);
+}
+
+.privacyParagraphs {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+}
+
+#userSettings {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  padding: 30px;
+  width: 70%;
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+  box-shadow: rgba(0,0,0,0.85) 2px 2px 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#teamHeadingParagraph {
+  margin-bottom: 2px;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  color: var(--bs-green);
+}
+
+#teamHeading {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Sedgwick Ave Display';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+}
+
+#teamMemberHeading {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Sedgwick Ave Display';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  color: var(--bs-indigo);
+}
+
+#teamMemberParagraph {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+}
+
+#signupHeadingParagraph {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  color: var(--bs-green);
+}
+
+#signupHeading {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Sedgwick Ave Display';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+}
+
+#signupCard {
+  font-size: 16px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  padding: 30px;
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+  box-shadow: rgba(0,0,0,0.85) 2px 2px 3px;
+}
+
+#cart {
+  font-size: 16px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  padding: 30px;
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+  width: 75%;
+}
+
+#product {
+  font-size: 16px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  padding: 30px;
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+  box-shadow: rgba(0,0,0,0.85) 2px 2px 3px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#orderStatus {
+  font-size: 16px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  padding: 20px;
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+}
+
+#contactsMessageForm {
+  padding: 10px;
+}
+
+#contactsMessageInput {
+  font-size: 16px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  background: rgba(0,0,0,0.25);
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+  color: var(--bs-white);
+}
+
+#contactsMessageButton {
+  border: groove;
+  border-radius: 16px;
+  border-color: var(--bs-body-bg);
+  border-width: medium;
+  box-shadow: rgba(0,0,0,0.85) 2px 2px 3px;
+  flex: auto;
+  flex-direction: column;
+  flex-grow: initial;
+  flex-shrink: initial;
+  flex-flow: column;
+  background: var(--bs-form-valid-color);
+  color: #000000;
+  margin: auto;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Sedgwick Ave';
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+#contactsMessageEmailInput {
+  font-size: 16px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  background: rgba(0,0,0,0.25);
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+  color: var(--bs-white);
+}
+
+#contactsMessageNameInput {
+  font-size: 16px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  background: rgba(0,0,0,0.25);
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+  color: var(--bs-white);
+}
+
+#contactsMethodsPhoneHeading {
+  font-size: 16px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+}
+
+#contactsMethodsPhoneParagraph {
+  font-size: 16px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+}
+
+#contactsMethodsEmailHeading {
+  font-size: 16px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+}
+
+#contactsMethodsEmailParagraph {
+  font-size: 16px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+}
+
+#contactsMethodsLocationHeading {
+  font-size: 16px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+}
+
+#contactsMethodsLocationParagraph {
+  font-size: 16px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+}
+
+#contactsHeading {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+}
+
+#contactsHeadingParagraph {
+  font-size: 36px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  color: var(--bs-success);
+}
+
+#contactsMethodsColumn {
+  padding: 20px;
+}
+
+#loginHeadingParagraph {
+  font-size: 36px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  color: var(--bs-green);
+}
+
+#loginHeading {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Sedgwick Ave Display';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+}
+
+#loginCard {
+  font-size: 16px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  padding: 30px;
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+  background: var(--bs-body-bg);
+  box-shadow: rgba(0,0,0,0.85) 2px 2px 3px;
+}
+
+#privacySection {
+  padding: 30px;
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+#termsSection {
+  padding: 30px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+  box-shadow: rgba(0,0,0,0.85) 2px 2px 3px;
+}
+
+#aboutMissionHeading {
+  font-size: 24px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave Display';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  color: var(--bs-success);
+}
+
+#aboutVisionHeading {
+  font-size: 24px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave Display';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  color: var(--bs-success);
+  margin-top: 30px;
+}
+
+#aboutVisionParagraph {
+  font-size: 14px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  padding: 30px;
+}
+
+#aboutMissionParagraph {
+  font-size: 14px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  padding: 30px;
+}
+
+#nav {
+  font-size: 16px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+}
+
+#homeNavItem {
+  margin-top: 20px;
+}
+
+#navTitle {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: 'Sedgwick Ave Display';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--bs-blue);
+}
+
+#navLogoSpan {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#footerTermsParagraph {
+  font-size: 12px;
+  font-weight: 100;
+  font-family: 'Inter';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+}
+
+#footerPrivacyParagraph {
+  font-size: 12px;
+  font-weight: 100;
+  font-family: 'Inter';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+}
+
+#footerCopyrightParagraph {
+  font-size: 12px;
+  font-weight: 100;
+  font-family: 'Inter';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+}
+
+#footerLinksRow {
+  font-size: 12px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+}
+
+#footerRow {
+  font-size: 12px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+}
+
+#servicesSection {
+  margin-top: 30px;
+  padding: 10px;
+}
+
+#indexHeader {
+  font-size: 16px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+}
+
+#headerHeading {
+  margin-top: 10px;
+}
+
+#webServicesHeading {
+  margin-top: 30px;
+}
+
+#contactsSection {
+  padding: 30px;
+}
+
+#brands {
+  padding: 10px;
+}
+
+#threeDServicesRow {
+  max-width: 900px;
+}
+
+#vinylServicesRow {
+  max-width: 900px;
+}
+
+#webServicesRow {
+  max-width: 900px;
+}
+
+#teamMemberRow {
+  max-width: 700px;
+}
+
+#storeSigninNavItem {
+  margin-top: 10px;
+}
+
+#section404 {
+  background: var(--bs-white);
+}
+
+#container404 {
+  background: var(--bs-white);
+}
+
+#heading404 {
+  color: var(--bs-indigo);
+  font-size: 64px;
+  font-weight: 600;
+  font-family: 'Sedgwick Ave Display';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  margin-bottom: 15px;
+}
+
+#paragraph404 {
+  color: var(--bs-indigo);
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+#image404 {
+  margin-top: 30px;
+  image-rendering: auto;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#column404-1 {
+  margin: auto;
+}
+
+#footerSubscribeButton {
+  border: groove;
+  border-radius: 16px;
+  border-color: var(--bs-body-bg);
+  border-width: medium;
+  box-shadow: rgba(0,0,0,0.85) 2px 2px 3px;
+  flex: auto;
+  flex-direction: column;
+  flex-grow: initial;
+  flex-shrink: initial;
+  flex-flow: column;
+  background: var(--bs-form-valid-color);
+  color: #000000;
+  margin: auto;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Sedgwick Ave';
+}
+
+#footerSubscribeEmailInput {
+  font-size: 12px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  background: rgba(0,0,0,0.25);
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+  padding: 3px;
+  color: var(--bs-white);
+}
+
+#contactsMessageSubmit {
+  position: relative;
+}
+
+#webServicesHeadingButton {
+  border: groove;
+  border-radius: 16px;
+  border-color: var(--bs-body-bg);
+  border-width: medium;
+  box-shadow: rgba(0,0,0,0.85) 2px 2px 3px;
+  flex: auto;
+  flex-direction: column;
+  flex-grow: initial;
+  flex-shrink: initial;
+  flex-flow: column;
+  background: var(--bs-form-valid-color);
+  color: #000000;
+  margin: auto;
+  padding: 5px;
+}
+
+#vinylServicesHeadingButton {
+  border: groove;
+  border-radius: 16px;
+  border-color: var(--bs-body-bg);
+  border-width: medium;
+  box-shadow: rgba(0,0,0,0.85) 2px 2px 3px;
+  flex: auto;
+  flex-direction: column;
+  flex-grow: initial;
+  flex-shrink: initial;
+  flex-flow: column;
+  background: var(--bs-form-valid-color);
+  color: #000000;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+#threeDServicesHeadingButton {
+  border: groove;
+  border-radius: 16px;
+  border-color: var(--bs-body-bg);
+  border-width: medium;
+  box-shadow: rgba(0,0,0,0.85) 2px 2px 3px;
+  flex: auto;
+  flex-direction: column;
+  flex-grow: initial;
+  flex-shrink: initial;
+  flex-flow: column;
+  background: var(--bs-form-valid-color);
+  color: #000000;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+#servicesHeading {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  color: var(--bs-pink);
+}
+
+#servicesHeadingParagraph {
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  margin-bottom: 10px;
+}
+
+#threeDServicesHeading {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  color: var(--bs-pink);
+  margin-top: 20px;
+}
+
+#vinylServicesHeading {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  color: var(--bs-pink);
+  margin-top: 20px;
+}
+
+#webServicesHeading {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  color: var(--bs-pink);
+  margin-top: 20px;
+}
+
+#threeDServicesHeadingParagraph {
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  margin-bottom: 20px;
+}
+
+#vinylServicesHeadingParagraph {
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  margin-bottom: 20px;
+}
+
+#webServicesHeadingParagraph {
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  margin-bottom: 20px;
+}
+
+#webServicesImage {
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+}
+
+#vinylServicesImage {
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+}
+
+#threeDServicesImage {
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+}
+
+#brandsSection {
+  margin-bottom: 60px;
+  padding: 10px;
+}
+
+#brandsHeading {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave Display';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  color: var(--bs-orange);
+}
+
+#productsSearchColumn {
+  margin-top: 40px;
+}
+
+#productsSearch {
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+}
+
+#productsList {
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+  font-size: 18px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  padding: 30px;
+}
+
+#productsCatagoryList {
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+}
+
+#productsSection {
+  padding: 30px;
+  margin-top: 30px;
+}
+
+#productsHeadingParagraph {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  margin-top: 20px;
+}
+
+#productsHeading {
+  font-size: 30px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave Display';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  color: var(--bs-red);
+}
+
+#indexHeaderHeading {
+  font-size: 16vw;
+  font-weight: 500;
+  font-family: 'Sedgwick Ave Display';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  color: var(--bs-blue);
+  margin-top: 30px;
+}
+
+#indexHeaderParagraph {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: 'Sedgwick Ave Display';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  color: var(--bs-green);
+}
+
+#indexHeaderBannerImage {
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: thick;
+}
+
+#navBrandLogo {
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+}
+
+#aboutContainer {
+  width: 50%;
+}
+
+#aboutHeading {
+  font-size: 36px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave Display';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  color: var(--bs-indigo);
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+#contactsMethodsDiv {
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+  box-shadow: rgba(0,0,0,0.85) 2px 2px 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contactsMessageForm {
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#productsListColumn {
+  margin-top: 40px;
+}
+
+#refundHeading {
+  font-size: 40px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave Display';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  color: var(--bs-red);
+}
+
+#refundParagraph {
+  font-size: 24px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  color: var(--bs-yellow);
+}
+
+#teamMemberColumn {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+  box-shadow: rgba(0,0,0,0.85) 2px 2px 3px;
+}
+
+#userOrders {
+  font-weight: 100;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  padding: 30px;
+  width: 100%;
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+  box-shadow: rgba(0,0,0,0.85) 2px 2px 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brandsDiv {
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+  background: rgba(255,255,255,0.4);
+  padding: 10px;
+}
+
+#brandModalLabel {
+  font-size: 36px;
+  font-weight: 100;
+  font-family: 'Sedgwick Ave Display';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  color: var(--bs-teal);
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#brandModalExcerpt {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Sedgwick Ave';
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.85) 2px 2px 3px, rgb(0,0,0) 1px 1px 1px;
+  color: var(--bs-white);
+  padding: 5px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+#brandModalImage {
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+  box-shadow: rgba(0,0,0,0.85) 2px 2px 3px;
+  padding: 10px;
+}
+
+.modal-body {
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+  box-shadow: rgba(0,0,0,0.85) 2px 2px 3px;
+  padding: 20px;
+  margin: 10px;
+}
+
+#brandModalLink {
+  border: groove;
+  border-radius: 16px;
+  border-color: var(--bs-body-bg);
+  border-width: medium;
+  box-shadow: rgba(0,0,0,0.85) 2px 2px 3px;
+  flex: auto;
+  flex-direction: column;
+  flex-grow: initial;
+  flex-shrink: initial;
+  flex-flow: column;
+  background: var(--bs-form-valid-color);
+  color: #000000;
+  margin: auto;
+  padding-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Sedgwick Ave';
+}
+
+#brandModal {
+  border: groove;
+  border-color: var(--bs-body-bg);
+  border-radius: 16px;
+  border-width: medium;
+  box-shadow: rgba(0,0,0,0.85) 2px 2px 3px;
+}
+

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html data-bs-theme="auto" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+    <title>Home - Grind Harder LLC</title>
+    <meta name="theme-color" content="#9e00ff">
+    <link rel="canonical" href="https://grindharderaz.com/">
+    <meta property="og:url" content="https://grindharderaz.com/">
+    <meta name="twitter:image" content="https://grindharderaz.com/assets/img/gfx/grindHarderBanner.webp">
+    <meta name="url" content="https://grindharderaz.com">
+    <meta name="twitter:title" content="Grind Harder AZ">
+    <meta property="og:description" content="The Official Home of Grind Harder LLC and The Grind Harder AZ  Smoke Shop">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Grind Harder AZ">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="The Official Home of Grind Harder LLC and The Grind Harder AZ  Smoke Shop">
+    <meta property="og:image" content="https://grindharderaz.com/assets/img/gfx/grindHarderBanner.webp">
+    <meta name="description" content="The Official Home of Grind Harder LLC and Grind Harder AZ Smoke Shop">
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "Grind Harder LLC",
+            "url": "https://grindharderaz.com"
+        }
+    </script>
+    <script>
+        (function() {
+
+            // JavaScript snippet handling Dark/Light mode switching
+
+            const getStoredTheme = () => localStorage.getItem('theme');
+            const setStoredTheme = theme => localStorage.setItem('theme', theme);
+            const forcedTheme = document.documentElement.getAttribute('data-bss-forced-theme');
+
+            const getPreferredTheme = () => {
+
+                if (forcedTheme) return forcedTheme;
+
+                const storedTheme = getStoredTheme();
+                if (storedTheme) {
+                    return storedTheme;
+                }
+
+                const pageTheme = document.documentElement.getAttribute('data-bs-theme');
+
+                if (pageTheme) {
+                    return pageTheme;
+                }
+
+                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+
+            const setTheme = theme => {
+                if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.documentElement.setAttribute('data-bs-theme', 'dark');
+                } else {
+                    document.documentElement.setAttribute('data-bs-theme', theme);
+                }
+            }
+
+            setTheme(getPreferredTheme());
+
+            const showActiveTheme = (theme, focus = false) => {
+                const themeSwitchers = [].slice.call(document.querySelectorAll('.theme-switcher'));
+
+                if (!themeSwitchers.length) return;
+
+                document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+                    element.classList.remove('active');
+                    element.setAttribute('aria-pressed', 'false');
+                });
+
+                for (const themeSwitcher of themeSwitchers) {
+
+                    const btnToActivate = themeSwitcher.querySelector('[data-bs-theme-value="' + theme + '"]');
+
+                    if (btnToActivate) {
+                        btnToActivate.classList.add('active');
+                        btnToActivate.setAttribute('aria-pressed', 'true');
+                    }
+                }
+            }
+
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+                const storedTheme = getStoredTheme();
+                if (storedTheme !== 'light' && storedTheme !== 'dark') {
+                    setTheme(getPreferredTheme());
+                }
+            });
+
+            window.addEventListener('DOMContentLoaded', () => {
+                showActiveTheme(getPreferredTheme());
+
+                document.querySelectorAll('[data-bs-theme-value]')
+                    .forEach(toggle => {
+                        toggle.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            const theme = toggle.getAttribute('data-bs-theme-value');
+                            setStoredTheme(theme);
+                            setTheme(theme);
+                            showActiveTheme(theme);
+                        })
+                    })
+            });
+        })();
+    </script>
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.webp?h=e40bab94b38766578b15fa7ed62bc968">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.webp?h=968e29ef1e3597e41fa57ebccf9776e1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.webp?h=968e29ef1e3597e41fa57ebccf9776e1" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.webp?h=58f9f151cfedb4a9ecf4d75b686bd4a7">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.webp?h=58f9f151cfedb4a9ecf4d75b686bd4a7" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.webp?h=e40bab94b38766578b15fa7ed62bc968">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicons/android-chrome-192x192.webp?h=c2f5e72535f6a1afcbf70d246db63b1a">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicons/android-chrome-512x512.webp?h=009ecf2d479bd89570980ed10cb95aa1">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=bec7173809e9299f24e368ea574911e3">
+    <link rel="stylesheet" href="https://cdn.reflowhq.com/v2/toolkit.min.css">
+    <link rel="manifest" href="/manifest.json?h=2791b38de00d8106b7702e45be1686e5" crossorigin="use-credentials">
+    <link rel="stylesheet" href="/assets/css/Inter.css?h=3bc6a554148c6e6ca00f20c6ac41f325">
+    <link rel="stylesheet" href="/assets/css/Sedgwick%20Ave.css?h=65d7a730f5f4b8aa8cbeee64f740c3d7">
+    <link rel="stylesheet" href="/assets/css/Sedgwick%20Ave%20Display.css?h=65d7a730f5f4b8aa8cbeee64f740c3d7">
+    <link rel="stylesheet" href="/assets/css/Inter.css?h=b42a60cf7a9e1db9535fb63dc2045b40">
+    <link rel="stylesheet" href="/assets/css/Sedgwick%20Ave.css?h=e064f01c10139c504531e4200013262e">
+    <link rel="stylesheet" href="/assets/css/Sedgwick%20Ave%20Display.css?h=8ce04334273ac2233e333a76c505d000">
+    <link rel="stylesheet" href="/assets/css/bss-overrides.css?h=fbff88540d46592d956203dc103eba52">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="/assets/css/untitled.css?h=8a48a111cacd1ad49c45f013c1733888">
+    <link rel="stylesheet" href="/assets/css/bootstrap/css/bootstrap.min.css?h=643ab8330e54a22893d6bf3b7160ab34">
+    <link rel="stylesheet" href="https://cdn.reflowhq.com/v2/toolkit.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="/assets/css/css/untitled.css?h=27ec94f296b47ad0857ccefb059cc58f">
+</head>
+
+<body id="indexBody">
+    <!-- Start: #mainNav -->
+    <nav class="navbar fixed-top bg-transparent navbar-dark z-100" id="mainNav" data-bs-theme="dark">
+        <div class="container-fluid"><a class="navbar-brand visible" id="navBrand" href="/" style="height: 9vh;"></a><button data-bs-toggle="collapse" class="navbar-toggler bg-transparent border rounded border-2 border-secondary-subtle shadow d-flex float-end flex-column flex-grow-0 flex-shrink-1 justify-content-center align-items-center align-content-center align-self-center" data-bs-target="#navcol-1" id="navToggle"><span class="visually-hidden" id="navHiddenToggle">Toggle navigation</span><span class="navbar-toggler-icon text-secondary text-opacity-75 text-bg-dark bg-transparent" id="navToggler"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav mx-auto" id="nav">
+                    <li class="nav-item" id="homeNavItem"><a class="nav-link active" id="homeNavLink" href="/index.html">Home</a></li>
+                    <li class="nav-item" id="servicesNavItem"><a class="nav-link" id="servicesNavLink" href="/services.html">Services</a></li>
+                    <li class="nav-item" id="aboutNavItem"><a class="nav-link" id="aboutNavLink" href="/about.html">About</a></li>
+                    <li class="nav-item" id="contactsNavItem"><a class="nav-link" id="cintactsNavLink" href="/contacts.html">Contacts</a></li>
+                    <li class="nav-item" id="productsNavItem"><a class="nav-link" id="productsNavLink" href="/products.html">Products</a></li>
+                    <li class="nav-item" id="cartNavItem"><a class="nav-link" id="cartNavLink" href="/shopping-cart.html">Shopping Cart</a></li>
+                    <li class="nav-item" id="storeSigninNavItem">
+                        <div data-reflow-type="auth-button" data-reflow-user-page-url="user.html" id="storeSignin"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav><!-- End: #mainNav -->
+    <header id="indexHeader" class="bg-transparent">
+        <!-- Start: Hero Clean Reverse -->
+        <div class="container" id="indexHeaderContainer">
+            <div class="row d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill" id="indexHeaderRow">
+                <div class="col-auto mx-auto" id="indexHeaderColumn">
+                    <p id="indexHeaderParagraph">Welcome To</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"><img class="img-fluid d-flex flex-column flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto pulse animated" id="indexHeaderBannerImage" src="/assets/img/gfx/grindHarderBanner.webp?h=944085a3866e0102ccb2ef806f3cfcb2" loading="eager" alt="Grind Harder LLC Banner"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1 id="indexHeaderHeading">Grind Harder<br>Smoke Shop</h1>
+                </div>
+            </div>
+        </div><!-- End: Hero Clean Reverse -->
+    </header>
+    <section id="productsSection">
+        <!-- Start: #productsContainer -->
+        <div class="container-fluid py-5" id="productsContainer">
+            <div class="row mb-4 mb-lg-5" id="productsHeadingRow">
+                <div class="col-md-8 col-xl-6 text-center mx-auto" id="productsHeadingColumn">
+                    <h2 id="productsHeading">Products</h2>
+                    <p id="productsHeadingParagraph">Product offerings by <br>Grind Harder &amp; Affiliates</p>
+                </div>
+            </div>
+            <div class="row mx-auto" id="productsListRow">
+                <div class="col" id="productsListColumn">
+                    <div class="d-flex flex-column flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto" data-reflow-type="product-list" data-reflow-shoppingcart-url="shopping-cart.html" data-reflow-layout="cards" data-reflow-page="1" data-reflow-perpage="6" data-reflow-order="name_asc" data-reflow-product-link="/product.html?product={id}" data-aos="slide-up" id="productsList"></div>
+                </div>
+            </div>
+            <div class="row mx-auto" id="productsSearchRow">
+                <div class="col" id="productsSearchColumn">
+                    <div class="d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto" data-reflow-type="product-search" data-reflow-show-button="true" id="productsSearch"></div>
+                </div>
+            </div>
+        </div><!-- End: #productsContainer -->
+    </section>
+    <section id="brandsSection">
+        <div class="container text-center" id="brandsHeadingContainer">
+            <h1 id="brandsHeading">Partners &amp; Featured Brands</h1>
+        </div>
+        <div class="container" id="brandsContainer">
+            <div class="row" id="brandsRow1">
+                <div class="col w-auto h-100 justify-content-center align-items-center p-2" data-aos="slide-up" id="brandsColumn1">
+                    <div class="brandsDiv" data-brand-name="StickerBagz Studio" data-brand-excerpt="If you’re looking for custom vinyl designs, then StickerBagz is your go-to!" data-brand-link="https://stickerbagzstudio.com"><img class="img-fluid" id="brandsImage1" alt="StickerBagz Studio" src="/assets/img/brands/sbslogo512.webp?h=2bf5c62df0b4cd90aa6f4f54e81d5f0d"></div>
+                </div>
+                <div class="col w-auto h-100 justify-content-center align-items-center p-2" data-aos="slide-up" id="brandsColumn2">
+                    <div class="brandsDiv" data-brand-name="Phoenix Star Glass" data-brand-excerpt="Explore the finest glass products at Phoenix Star Glass." data-brand-link="https://phoenixstarglass.com"><img class="img-fluid" alt="Phoenix Star Glass" src="/assets/img/brands/phoenixStarLogoTrans.webp?h=ced494fdd0e9352aa51b46527e5f9851"></div>
+                </div>
+                <div class="col w-auto h-100 justify-content-center align-items-center p-2" data-aos="slide-up" id="brandsColumn3">
+                    <div class="brandsDiv" data-brand-name="Kanibus Kulture" data-brand-excerpt="Kanibus Kulture brings a unique approach to cannabis culture." data-brand-link="https://www.kanibuskulture.com"><img class="img-fluid" alt="Kanibus Kulture" src="/assets/img/brands/kanibuskulturelogo.webp?h=b19ae4896504edd76b6df6da646b2d91"></div>
+                </div>
+                <div class="col w-auto h-100 justify-content-center align-items-center p-2" data-aos="slide-up" id="brandsColumn4">
+                    <div class="brandsDiv" data-brand-name="Happy Fruit CBD &amp; Hemp" data-brand-excerpt="Happy Fruit offers quality CBD &amp; Hemp products." data-brand-link="https://happyfruitshop.com"><img class="img-fluid" alt="Happy Fruit" src="/assets/img/brands/happyfruitlogo.webp?h=07c694d1465e66758f816ab1d954a155"></div>
+                </div>
+                <div class="col w-auto h-100 justify-content-center align-items-center p-2" data-aos="slide-up" id="brandsColumn5">
+                    <div class="brandsDiv" data-brand-name="Exo Club" data-brand-excerpt="Discover alternative products with Exo Club." data-brand-link="https://www.exoclub.com/"><img class="img-fluid" alt="Exo Club" src="/assets/img/brands/exoClubLogo.webp?h=fff5a7e4fcf93d7f8a0bcacf36582513"></div>
+                </div>
+            </div>
+            <div class="row" id="brandsRow2">
+                <div class="col w-auto h-100 justify-content-center align-items-center p-2" data-aos="slide-up" id="brandsColumn6">
+                    <div class="brandsDiv" data-brand-name="Puff Puff Pandas" data-brand-excerpt="Join the fun with Puff Puff Pandas!" data-brand-link="https://puffpuffpandas.io"><img class="img-fluid" alt="Puff Puff Pandas" src="/assets/img/brands/puffpuffpandaslogo.webp?h=675a122bb60e87c18abfb61bccf33bf8"></div>
+                </div>
+                <div class="col w-auto h-100 justify-content-center align-items-center p-2" data-aos="slide-up" id="brandsColumn7">
+                    <div class="brandsDiv" data-brand-name="The Standard by Black Market" data-brand-excerpt="Experience quality like never before with The Standard." data-brand-link="https://thestandardbm.com/"><img class="img-fluid" alt="The Standard" src="/assets/img/brands/thestandardbmlogo.webp?h=1e60a0d659cf62623790d4464438076a"></div>
+                </div>
+                <div class="col w-auto h-100 justify-content-center align-items-center p-2" data-aos="slide-up" id="brandsColumn8">
+                    <div class="brandsDiv" data-brand-name="Lookah Brand" data-brand-excerpt="Lookah offers innovative products for all your needs." data-brand-link="https://lookah.com/"><img class="img-fluid" alt="Lookah" src="/assets/img/brands/lookahlogo.webp?h=5881315cd2358b81d05ec82e74669a2b"></div>
+                </div>
+                <div class="col w-auto h-100 justify-content-center align-items-center p-2" data-aos="slide-up" id="brandsColumn9">
+                    <div class="brandsDiv" data-brand-name="Vibes Papers" data-brand-excerpt="Get the best rolling papers with Vibes." data-brand-link="https://vibespapers.com/"><img class="img-fluid" alt="Vibes Papers" src="/assets/img/brands/vibespaperslogo.webp?h=a372757eaaedd0242f066f92317269aa"></div>
+                </div>
+                <div class="col w-auto h-100 justify-content-center align-items-center p-2" data-aos="slide-up" id="brandsColumn10">
+                    <div class="brandsDiv" data-brand-name="Loose Leaf Wraps" data-brand-excerpt="Experience the finest wraps with Loose Leaf." data-brand-link="https://looseleaf.com/"><img class="img-fluid" alt="Loose Leaf" src="/assets/img/brands/looseleaflogo.webp?h=5678d6a1257a5bdafc0677e3c12e37b5"></div>
+                </div>
+            </div>
+            <div class="row" id="brandsRow3">
+                <div class="col w-auto h-100 justify-content-center align-items-center p-2" data-aos="slide-up" id="brandsColumn11">
+                    <div class="brandsDiv" data-brand-name="Scorch Torch" data-brand-excerpt="Discover premium torch lighters from Scorch Torch." data-brand-link="https://scorchtorch.us.com/"><img class="img-fluid" alt="Scorch Torch" src="/assets/img/brands/scorchTorchLogo.webp?h=e96ddaaae2a0c905bf2cdcbe921d56c5"></div>
+                </div>
+                <div class="col w-auto h-100 justify-content-center align-items-center p-2" data-aos="slide-up" id="brandsColumn12">
+                    <div class="brandsDiv" data-brand-name="Stiiizy Hemp" data-brand-excerpt="Stiiizy provides top-tier hemp products." data-brand-link="https://stiiizyhemp.com/"><img class="img-fluid" alt="Stiiizy Hemp" src="/assets/img/brands/stiiizyhemplogo.webp?h=8f2c0a98134ec5b1885ab3c7703eec24"></div>
+                </div>
+                <div class="col w-auto h-100 justify-content-center align-items-center p-2" data-aos="slide-up" id="brandsColumn13">
+                    <div class="brandsDiv" data-brand-name="Focus V" data-brand-excerpt="Focus V is known for its high-quality vaporizers." data-brand-link="https://www.focusv.com/"><img class="img-fluid" alt="Focus V" src="/assets/img/brands/focusvlogo.webp?h=c56228d23e4abd5852ac6971aeee0e7a"></div>
+                </div>
+                <div class="col w-auto h-100 justify-content-center align-items-center p-2" data-aos="slide-up" id="brandsColumn14">
+                    <div class="brandsDiv" data-brand-name="White Rhino Products" data-brand-excerpt="White Rhino offers innovative smoking accessories." data-brand-link="https://www.whiterhinoproducts.com/"><img class="img-fluid" alt="White Rhino" src="/assets/img/brands/whiteRhinoSquareLogo.webp?h=ec7598f9cee2f3e27525320e05f84478"></div>
+                </div>
+                <div class="col w-auto h-100 justify-content-center align-items-center p-2" data-aos="slide-up" id="brandsColumn15">
+                    <div class="brandsDiv" data-brand-name="Geek Bar" data-brand-excerpt="Geek Bar is your destination for quality vaping products." data-brand-link="https://www.geekbar.com/"><img class="img-fluid" alt="Geek Bar" src="/assets/img/brands/geekBarLogo.webp?h=f262a81c1fc2883a7937493d2d582ccf"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" role="dialog" tabindex="-1" id="brandModal" aria-labelledby="brandModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="brandModalLabel"></h5><button class="btn-close" aria-label="Close" data-bs-dismiss="modal" type="button"></button>
+                </div>
+                <div class="modal-body"><img class="img-fluid" alt="Brand Logo" id="brandModalImage">
+                    <p id="brandModalExcerpt"></p>
+                </div>
+                <div class="modal-footer"><a class="btn btn-primary" role="button" href="#" id="brandModalLink" target="_blank">Let's Go!</a></div>
+            </div>
+        </div>
+    </div>
+    <section class="visually-hidden visible h-0 w-0" id="servicesSection">
+        <!-- Start: #servicesContainer -->
+        <div class="container" id="servicesContainer">
+            <div class="row" id="servicesHeadingRow">
+                <div class="col-md-8 col-xl-6 mx-auto" id="servicesHeadingColumn">
+                    <h1 id="servicesHeading">Grind Harder Services</h1>
+                    <p id="servicesHeadingParagraph">Just some of the many services we offer here.</p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 mx-auto" data-aos="slide-up" id="threeDServicesRow">
+                <div class="col" id="threeDServicesImageColumn"><img class="img-fluid" id="threeDServicesImage" src="/assets/img/graphics/3d-design.webp?h=645d1da95aae0127cccd23da41e9f0bb" loading="eager" alt="3D Design Services"></div>
+                <div class="col align-self-center" id="threeDServicesHeadingColumn">
+                    <div class="d-flex flex-column flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto" id="threeDServicesHeadingDiv">
+                        <h5 id="threeDServicesHeading">3D Printing <br>&amp; Modeling Services</h5>
+                        <p id="threeDServicesHeadingParagraph">From a simple print, to a full blown model and print we have got you.</p><button class="btn" id="threeDServicesHeadingButton" type="button">Learn more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 mx-auto" data-aos="slide-up" id="vinylServicesRow">
+                <div class="col order-md-last" id="vinylServicesImageColumn"><img class="img-fluid" id="vinylServicesImage" src="/assets/img/graphics/vinyl-design.webp?h=b1231c063287bcbed43310d0334f4ff0" loading="eager" alt="Vinyl Design Services"></div>
+                <div class="col align-self-center" id="vinylServicesHeadingColumn">
+                    <div class="d-flex flex-column flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto" id="vinylServicesHeadingDiv">
+                        <h5 id="vinylServicesHeading">Vinyl Design Services</h5>
+                        <p id="vinylServicesHeadingParagraph">Print &amp; Cut, Car Decals, and More.</p><button class="btn" id="vinylServicesHeadingButton" type="button">Learn more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 mx-auto" data-aos="slide-up" id="webServicesRow">
+                <div class="col" id="webServicesImageColumn"><img class="img-fluid" id="webServicesImage" src="/assets/img/graphics/web-design.webp?h=1632fdfd05c086404a60da5c5b2d8276" loading="eager" alt="Web Design Services"></div>
+                <div class="col align-self-center" id="webServicesHeadingColumn">
+                    <div class="d-flex flex-column flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto" id="webServicesHeadingDiv">
+                        <h5 id="webServicesHeading">Web Design Services</h5>
+                        <p id="webServicesHeadingParagraph">Like this website you see now.</p><button class="btn" id="webServicesHeadingButton" type="button">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End: #servicesContainer -->
+    </section>
+    <section id="contactsSection">
+        <div class="container py-5" id="contactsContainer">
+            <div class="row mb-5" id="contactsHeadingRow">
+                <div class="col-md-8 col-xl-6 text-center mx-auto" id="contactsHeadingColumn">
+                    <p id="contactsHeadingParagraph">Contact Us</p>
+                    <h1 id="contactsHeading">Questions or comments?<br>Reach out to us here.</h1>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center" id="contactsMessageRow">
+                <div class="col-md-6 col-xl-4" id="contactsMessageColumn">
+                    <div id="contactsMessageFormDiv">
+                        <form id="contactsMessageForm" method="post">
+                            <div class="mb-3" id="contactsMessageName"><input class="form-control form-control" type="text" id="contactsMessageNameInput" name="name" placeholder="Name"></div>
+                            <div class="mb-3" id="contactsMessageEmail"><input class="form-control form-control" type="email" id="contactsMessageEmailInput" name="email" placeholder="Email"></div>
+                            <div class="mb-3" id="contactsMessage"><textarea class="form-control form-control" id="contactsMessageInput" name="message" placeholder="Message" rows="6"></textarea></div>
+                            <div class="d-flex flex-column flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto" id="contactsMessageSubmit"><button class="btn" id="contactsMessageButton" type="submit">Submit</button></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xl-4 d-flex justify-content-center justify-content-xl-start" id="contactsMethodsColumn">
+                    <div class="d-flex h-100 flex-wrap flex-md-column justify-content-md-start align-items-md-start" id="contactsMethodsDiv">
+                        <div class="d-flex align-items-center p-3" id="contactsMethodsPhoneDiv">
+                            <div class="shadow d-flex flex-shrink-0 justify-content-center align-items-center bs-icon-md bs-icon-circle bs-icon-primary d-inline-block bs-icon bs-icon-md" id="contactsMethodsPhoneIconDiv"><svg id="contactsMethodsPhoneIcon" class="bi bi-telephone" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
+                            </svg></div>
+                            <div class="px-2" id="contactsMethodsPhoneTextDiv">
+                                <h1 id="contactsMethodsPhoneHeading">Phone</h1>
+                                <p id="contactsMethodsPhoneParagraph"><a>+1(520)848-9380</a></p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center p-3" id="contactsMethodsEmailDiv">
+                            <div class="shadow d-flex flex-shrink-0 justify-content-center align-items-center bs-icon-md bs-icon-circle bs-icon-primary d-inline-block bs-icon bs-icon-md" id="contactsMethodsEmailIconDiv"><svg id="contactsMethodsEmailIcon" class="bi bi-envelope" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"></path>
+                            </svg></div>
+                            <div class="px-2" id="contactsMethodsEmailTextDiv">
+                                <h1 id="contactsMethodsEmailHeading">Email</h1>
+                                <p id="contactsMethodsEmailParagraph"><a href="mailto:jeremy@grindharderaz.com">jeremy@grindharderaz.com</a></p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center p-3" id="contactsMethodsLocationDiv">
+                            <div class="shadow d-flex flex-shrink-0 justify-content-center align-items-center bs-icon-md bs-icon-circle bs-icon-primary d-inline-block bs-icon bs-icon-md" id="contactsMethodsLocationIconDiv"><svg id="contactsMethodsLocationIcon" class="bi bi-pin" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M4.146.146A.5.5 0 0 1 4.5 0h7a.5.5 0 0 1 .5.5c0 .68-.342 1.174-.646 1.479-.126.125-.25.224-.354.298v4.431l.078.048c.203.127.476.314.751.555C12.36 7.775 13 8.527 13 9.5a.5.5 0 0 1-.5.5h-4v4.5c0 .276-.224 1.5-.5 1.5s-.5-1.224-.5-1.5V10h-4a.5.5 0 0 1-.5-.5c0-.973.64-1.725 1.17-2.189A5.921 5.921 0 0 1 5 6.708V2.277a2.77 2.77 0 0 1-.354-.298C4.342 1.674 4 1.179 4 .5a.5.5 0 0 1 .146-.354zm1.58 1.408-.002-.001.002.001m-.002-.001.002.001A.5.5 0 0 1 6 2v5a.5.5 0 0 1-.276.447h-.002l-.012.007-.054.03a4.922 4.922 0 0 0-.827.58c-.318.278-.585.596-.725.936h7.792c-.14-.34-.407-.658-.725-.936a4.915 4.915 0 0 0-.881-.61l-.012-.006h-.002A.5.5 0 0 1 10 7V2a.5.5 0 0 1 .295-.458 1.775 1.775 0 0 0 .351-.271c.08-.08.155-.17.214-.271H5.14c.06.1.133.191.214.271a1.78 1.78 0 0 0 .37.282"></path>
+                            </svg></div>
+                            <div class="px-2" id="contactsMethodsLocationTextDiv">
+                                <h1 id="contactsMethodsLocationHeading">Location</h1>
+                                <p id="contactsMethodsLocationParagraph"><a href="https://maps.app.goo.gl/iJJwAZfXTgvp5LXh6">Tucson, AZ, USA</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- Start: #footer -->
+    <footer>
+        <div class="container py-4 py-lg-5" id="footerContainer">
+            <div class="row justify-content-center" id="footerRow">
+                <!-- Start: #footerBrandColumn -->
+                <div class="col-lg-3 d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last" id="footerBrandColumn">
+                    <div class="d-flex flex-column flex-grow-1 flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center align-self-center m-auto" id="footerBrandDiv"><span class="bs-icon-md bs-icon-rounded d-flex justify-content-center align-items-center me-2 bs-icon" id="footerBrandImageSpan"><img class="rounded img-fluid" id="footerBrandImage" src="/assets/img/favicons/apple-touch-icon.webp?h=e40bab94b38766578b15fa7ed62bc968" loading="eager" alt="Grind Harder LLC Logo"></span><span id="footerBrandSpan">Grind Harder LLC</span></div>
+                </div><!-- End: #footerBrandColumn -->
+            </div>
+            <div class="row row-cols-2 mt-2" id="footerSubscribeRow">
+                <div class="col-auto flex-column m-auto" id="footerSubscribeColumn">
+                    <div class="container-fluid" id="footerSubscribeContainer"><input type="email" id="footerSubscribeEmailInput" name="email" placeholder="Your Email"></div>
+                </div>
+                <div class="col-auto flex-column m-auto" id="footerSubscribeButtonColumn">
+                    <div class="container-fluid" id="footerSubscribeButtonContainer"><button class="btn" id="footerSubscribeButton" type="submit">Subscribe </button></div>
+                </div>
+            </div>
+            <div class="row row-cols-3 justify-content-center mt-2" id="footerLinksRow">
+                <!-- Start: #footerLinksColumn -->
+                <div class="col d-flex flex-column" id="footerServicesColumn">
+                    <h3 class="fs-6 fw-bold" id="footerServicesHeading">Services</h3>
+                    <ul class="list-unstyled" id="footerServicesList">
+                        <li class="mt-1 mb-1" id="footerServicesListItem1"><a id="footerServicesListItemLink1" href="#">3D</a></li>
+                        <li class="mt-1 mb-1" id="footerServicesListItem2"><a id="footerServicesListItemLink2" href="#">Vinyl</a></li>
+                        <li class="mt-1 mb-1" id="footerServicesListItem3"><a id="footerServicesListItemLink3" href="#">Web</a></li>
+                    </ul>
+                </div><!-- End: #footerLinksColumn -->
+                <!-- Start: #footerAboutColumn -->
+                <div class="col d-flex flex-column" id="footerAboutColumn">
+                    <h3 class="fs-6 fw-bold" id="footerAboutHeading">About</h3>
+                    <ul class="list-unstyled" id="footerAboutList">
+                        <li class="mt-1 mb-1" id="footerAboutListItem1"><a id="footerAboutListItemLink1" href="/about.html">About</a></li>
+                        <li class="mt-1 mb-1" id="footerAboutListItem2"><a id="footerAboutListItemLink2" href="/team.html">Team</a></li>
+                        <li class="mt-1 mb-1" id="footerAboutListItem3"><a id="footerAboutListItemLink3" href="/contacts.html">Contact</a></li>
+                    </ul>
+                </div><!-- End: #footerAboutColumn -->
+                <!-- Start: #footerShopColumn -->
+                <div class="col d-flex flex-column" id="footerShopColumn">
+                    <h3 class="fs-6 fw-bold" id="footerShopHeading">Shop</h3>
+                    <ul class="list-unstyled" id="footerShopList">
+                        <li class="mt-1 mb-1" id="footerShopListItem1"><a id="footerShopListItemLink1" href="/products.html">Products</a></li>
+                        <li class="mt-1 mb-1" id="footerShopListItem2"><a id="footerShopListItemLink2" href="/shopping-cart.html">Cart</a></li>
+                        <li class="mt-1 mb-1" id="footerShopListItem3"><a id="footerShopListItemLink3" href="/user.html">User</a></li>
+                    </ul>
+                </div><!-- End: #footerShopColumn -->
+            </div>
+            <div class="text-muted d-flex justify-content-between align-items-center" id="footerCopyrightDiv">
+                <p class="mb-0" id="footerCopyrightParagraph">Copyright © 2024 Grind Harder LLC<br>A BEDLAM520 Design</p>
+                <p class="mb-0" id="footerPrivacyParagraph"><a href="/privacy.html">Privacy Policy</a></p>
+                <p class="mb-0" id="footerTermsParagraph"><a href="/terms.html">Terms &amp; Conditions</a></p>
+                <ul class="list-inline mb-0" id="footerSocialsList">
+                    <li class="list-inline-item" id="footerSocialsListItem1"><a id="footerSocialsListItemLink1" href="https://facebook.com/grindharderaz"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook" id="footerSocialsListItemIcon1">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
+                            </svg></a></li>
+                    <li class="list-inline-item" id="footerSocialsListItem2"><a id="footerSocialsListItemLink2" href="https://x.com/grindharderaz"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-twitter-x" id="footerSocialsListItemIcon2">
+                                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"></path>
+                            </svg></a></li>
+                    <li class="list-inline-item" id="footerSocialsListItem3"><a id="footerSocialsListItemLink3" href="https://instagram.com/grindharderaz"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram" id="footerSocialsListItemIcon3">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                            </svg></a></li>
+                    <li class="list-inline-item" id="footerSocialsListItem4"><a id="footerSocialsListItemLink4" href="https://tiktok.com/grindharderaz"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-tiktok" id="footerSocialsListItemIcon4">
+                                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"></path>
+                            </svg></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer><!-- End: #footer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.reflowhq.com/v2/toolkit.min.js" data-reflow-project="739978188"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="/assets/js/bs-init-1.js?h=b787d6b6da2786e22e75caac7c13504d"></script>
+    <script src="/assets/js/bold-and-dark.js?h=78569998362133b84a76614652f3624f"></script>
+    <script src="/assets/js/brands-modal.js?h=ac14880a19eb79ad399f84f2e32c0824"></script>
+    <script src="/assets/js/bs-init.js?h=b787d6b6da2786e22e75caac7c13504d"></script>
+</body>
+
+</html>
